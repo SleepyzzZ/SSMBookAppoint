@@ -5,51 +5,40 @@ package com.sleepyzzz.appoint.entity;
  */
 public class Book {
 
-    private long bookId;
-    private String name;
-    private int number;
-    private int introd;
-
-    public Book() {
-
+    private long bookId;//图书ID
+    private String name;//图书名称
+    private int number;//馆藏数量
+    private String introd;
+    public Book() {  //为什么要有个无参构造器
     }
-
     public Book(long bookId, String name, int number) {
         this.bookId = bookId;
         this.name = name;
         this.number = number;
     }
-
-    public void setbookId(long bookId) {
-        this.bookId = bookId;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public void setIntrod(int introd) {
-        this.introd = introd;
-    }
-
-    public long getbookId() {
+    public long getBookId() {
         return bookId;
     }
-
+    public void setBookId(long bookId) {
+        this.bookId = bookId;
+    }
     public String getName() {
         return name;
     }
-
+    public void setName(String name) {
+        this.name = name;
+    }
     public int getNumber() {
         return number;
     }
-
-    public int getIntrod() {
+    public void setNumber(int number) {
+        this.number = number;
+    }
+    public String getIntrod() {
         return introd;
+    }
+    public void setIntrod(String introd) {
+        this.introd = introd;
     }
 
     @Override

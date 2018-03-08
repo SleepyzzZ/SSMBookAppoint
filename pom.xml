@@ -8,34 +8,35 @@
   <name>BookAppoint Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!-- 单元测试 -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <version>4.11</version>
     </dependency>
 
-    <!--日志-->
+    <!-- 1.日志 -->
+    <!-- 实现slf4j接口并整合 -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.1.1</version>
     </dependency>
 
+    <!-- 2.数据库 -->
     <dependency>
-      <groupId>mysql-connector-java</groupId>
-      <artifactId>mysql</artifactId>
-      <version>5.1.29</version>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.35</version>
+      <!--  <scope>runtime</scope> -->
     </dependency>
-
-    <!--jdbc连接池-->
     <dependency>
       <groupId>c3p0</groupId>
       <artifactId>c3p0</artifactId>
       <version>0.9.1.2</version>
     </dependency>
 
-    <!--dao MyBatis-->
+    <!-- DAO: MyBatis -->
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
@@ -47,7 +48,7 @@
       <version>1.2.3</version>
     </dependency>
 
-    <!--servlet web-->
+    <!-- 3.Servlet web -->
     <dependency>
       <groupId>taglibs</groupId>
       <artifactId>standard</artifactId>
@@ -61,26 +62,31 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.6.5</version>
+      <version>2.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.6.5</version>
+      <version>2.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.6.5</version>
+      <version>2.5.0</version>
     </dependency>
+    <!-- 	<dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.4</version>
+        </dependency> -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
     </dependency>
 
-    <!--Spring-->
-    <!--Spring核心-->
+    <!-- 4.Spring -->
+    <!-- 1)Spring核心 -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -96,8 +102,7 @@
       <artifactId>spring-context</artifactId>
       <version>4.1.7.RELEASE</version>
     </dependency>
-
-    <!--Spring DAO层-->
+    <!-- 2)Spring DAO层 -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
@@ -108,8 +113,7 @@
       <artifactId>spring-tx</artifactId>
       <version>4.1.7.RELEASE</version>
     </dependency>
-
-    <!--Spring Web-->
+    <!-- 3)Spring web -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
@@ -120,15 +124,14 @@
       <artifactId>spring-webmvc</artifactId>
       <version>4.1.7.RELEASE</version>
     </dependency>
-
-    <!--Spring Test-->
+    <!-- 4)Spring test -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
       <version>4.1.7.RELEASE</version>
     </dependency>
 
-    <!--redis客户端-->
+    <!-- redis客户端:Jedis -->
     <dependency>
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
@@ -145,7 +148,7 @@
       <version>1.0.8</version>
     </dependency>
 
-    <!--Map工具类-->
+    <!-- Map工具类 -->
     <dependency>
       <groupId>commons-collections</groupId>
       <artifactId>commons-collections</artifactId>
